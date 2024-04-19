@@ -1,15 +1,11 @@
-val name: String = "Kotlin"
-var greeting: String? = null
+fun getGreeting() = "Hello, Kotlin/Native!"
+
+fun sayHello(): Unit {
+    println(getGreeting())
+}
 
 fun main() {
-    
-
-    val greetingToPrint = when (greeting) {
-        null -> "Hi"
-        else -> greeting
-    }
-
-    println(greetingToPrint)
-    println(name)
-
+    println("Hello World")
+    println(getGreeting())
+    sayHello()
 }
