@@ -1,9 +1,8 @@
+const val PI = 3.14 // static final
+
+
 fun main() {
-    var n: = 10
-    var l: = 100L
-    var d: = 3.14
-    var f: = 3.14F
-    var b: = false
-    var s: = "String"
-    var c: = 'A'
+    val name = "Jamal" // read only. final
+    var i = 0 //mutable
 }
+
