@@ -1,8 +1,7 @@
-const val PI = 3.14 // static final
-
-
 fun main() {
-    val name = "Jamal" // read only. final
-    var i = 0 //mutable
-}
+    var name = "Kotlin"
+    println(name.uppercase())
 
+    var brand: String? = null
+    println(brand?.uppercase())
+}
