@@ -3,12 +3,14 @@ import kotlin.math.*
 
 
 fun main() {
+// ++ and --
 
-    val number1 = 10
-    val number2 = 2
-    println(PI)
-    println(max(number2,number1))
-    println(min(number2,number1))
-    println(sqrt(5.4))
-    println(round(8.2))
+    var number = 10
+    println(++number) // 11
+    println(number++) // 12
+    println(number) // print 12
+
+    println(--number) // 11
+    println(number--) // 11
+    println(number) // print 10
 }
