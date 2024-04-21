@@ -1,10 +1,10 @@
 fun main() {
 
-    val name1 = "Saleh"
-    val name2 = "Jamila"
-    val name3 = String("Saleh".toCharArray())
-
-    println("== ${name1 == name3}")
-    println("=== ${name1 === name3}")
-    println(".equals ${name1.equals(name3)}")
+    val number1 = 10
+    val number2 = 2
+    println(number1 + number2)
+    println(number1 - number2)
+    println(number1 / number2)
+    println(number1 * number2)
+    println(number1 % number2)
 }
