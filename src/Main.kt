@@ -4,13 +4,8 @@ import kotlin.math.*
 
 fun main() {
 // ++ and --
-
-    var number = 10
-    println(++number) // 11
-    println(number++) // 12
-    println(number) // print 12
-
-    println(--number) // 11
-    println(number--) // 11
-    println(number) // print 10
+    val sum = 10 + 10
+    val sumString = "10" + "10"
+    println("sum on numbers: $sum")
+    println("sum on strings: $sumString")
 }
