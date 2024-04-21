@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+<<<<<<< HEAD
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Learning-Kotlin" vcs="Git" />
+=======
+    <mapping directory="" vcs="Git" />
+>>>>>>> fbf26e08ccce80c7d92acb084e798a58073b2ec6
   </component>
 </project>
