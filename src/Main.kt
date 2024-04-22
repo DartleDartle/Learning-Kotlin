@@ -1,11 +1,12 @@
 import kotlin.math.*
 
-
-
 fun main() {
-// ++ and --
-    val sum = 10 + 10
-    val sumString = "10" + "10"
-    println("sum on numbers: $sum")
-    println("sum on strings: $sumString")
+
+        val number = "10";
+        println(10 + number.toInt())
+        val number2 = 10;
+        println(number2.toString() + number)
+        val d = 3.2;
+        println(d)
+        println(d.toInt())
 }

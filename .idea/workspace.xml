@@ -15,9 +15,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2fPgXHeRCQzccUxrojndPpW8gH6" />
   <component name="ProjectViewState">
     <option name="flattenModules" value="true" />
@@ -33,7 +33,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/9prin/IdeaProjects/Learning"
+    "last_opened_file_path": "C:/Users/Lenovo/OneDrive/Desktop/Learning Kotlin/Learning-Kotlin"
   }
 }]]></component>
   <component name="RunManager">
