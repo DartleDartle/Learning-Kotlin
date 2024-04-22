@@ -2,11 +2,17 @@ import kotlin.math.*
 
 fun main() {
 
-        val number = "10";
-        println(10 + number.toInt())
-        val number2 = 10;
-        println(number2.toString() + number)
-        val d = 3.2;
-        println(d)
-        println(d.toInt())
+        //For Boolean the name of the variable has to be a question.
+
+        val isAdult = true
+        val isMale = false
+        val isFemale = true
+        val ordedCompleted: Boolean? = null
+        println(ordedCompleted)
+        println(isAdult)
+        println(isMale)
+        println(isAdult && isMale)
+        println(isAdult || isMale)
+        println(isAdult && isFemale && isMale)
+        println(!isAdult)
 }
