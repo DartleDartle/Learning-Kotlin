@@ -28,6 +28,7 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
@@ -35,6 +36,15 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/9prin/IdeaProjects/Learning&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Kotlin.MainKt.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Lenovo/OneDrive/Desktop/Learning Kotlin/Learning-Kotlin"
+>>>>>>> 53b0d3922427017203786e42af450d8d9202da72
   }
 }</component>
   <component name="RunManager">
