@@ -3,9 +3,21 @@ import kotlin.math.*
 
 
 fun main() {
-// ++ and --
-    val sum = 10 + 10
-    val sumString = "10" + "10"
-    println("sum on numbers: $sum")
-    println("sum on strings: $sumString")
+
+    val n1 = 10
+    val n2 = 20
+
+    val value = if (n1 >= n2 || n1 <= 30) {
+        // println("n1 is greater than or equal to n2")
+        "n1 is greater than or equal to n2"
+    } else if(n1 == n2) {
+       // println("n1 is equal to n2")
+        "n1 is equal to n2"
+    } else {
+       // println("n1 is less than n2")
+        "n1 is less than  n2"
+    }
+
+    println(value)
+
 }
