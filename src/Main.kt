@@ -1,20 +1,15 @@
 fun main() {
-    val n1 = 10
-    val n2 = 20
+   val name = arrayOf("John", "Doe", "Jane", "Doe")
+    println(name[0])
+    println(name[1])
+    println(name[2])
+    println(name[3])
+    println(name.size)
 
-    when {
-       (n1 >= n2 || n1 <= 30) -> println(":)")
-        (n1 == 100) -> println("foo")
-        else -> println(":(")
-    }
-
-    val age = 20
-    when (age) {
-        in 13..19 -> println("Teenager")
-        !in 0..9 -> println("Not a Teenager")
-        in 20..29 -> println("Twenties")
-        in 30..39 -> println("Thirties")
-        else -> println("Over 40")
+    if ("John" in name) {
+        println("the name is in the array")
+    } else {
+        println("the name is not in the array")
     }
 
 }
