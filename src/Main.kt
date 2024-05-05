@@ -1,14 +1,13 @@
 fun main() {
 
-    // indices
-    val letters = charArrayOf(
-        'A', 'B', 'C', 'D', 'E')
-    for (index in letters.indices) {
-        println("$index - ${letters[index]}")
-    }
-    println("reverse")
-    for (index in letters.indices.reversed()){
-        println("$index - ${letters[index]}")
-    }
+    // Range, Down to, Steps
 
+    println("Range")
+    for (i in 1..5) println(i)
+    println("Down to")
+    for (i in 5 downTo 1) println(i)
+    println("Steps")
+    for (i in 1..5 step 2) println(i)
+    println("Steps and down to")
+    for (i in 5 downTo 1 step 2) println(i)
 }
