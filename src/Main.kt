@@ -1,10 +1,17 @@
 fun main() {
 
-    // While works with true condition only
+    val nums = intArrayOf(1, 2, 3, 4, 5, 6, 8)
 
-    do {
-        println("Hello")
-    } while (false)
-
-    // this is useful when you want to execute the block of code at least once
+    // break and continue
+    for (n in nums) {
+        if (n % 2 != 0) continue
+        if (n > 5) break
+        println(n)
+    }
+    // break and continue only in a loop
+    nums.forEach {
+        if (it % 2 != 0) return@forEach
+        if (it > 5) return@forEach
+        println(it)
+    }
 }
