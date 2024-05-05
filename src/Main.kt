@@ -1,16 +1,14 @@
 fun main() {
-    //for loop
-    val names = listOf("john", "jane", "alex")
-    val numbers = intArrayOf(1, 2, 3, 4, 5)
 
-    //capitalizing first letters of names
-    for(name in names) {
-        val n = name.replaceFirstChar {
-            it.uppercase()
-        }
-        println(n)
+    // indices
+    val letters = charArrayOf(
+        'A', 'B', 'C', 'D', 'E')
+    for (index in letters.indices) {
+        println("$index - ${letters[index]}")
     }
-    println()
-    // one line for loop
-    for (n in numbers) println(n)
+    println("reverse")
+    for (index in letters.indices.reversed()){
+        println("$index - ${letters[index]}")
+    }
+
 }
