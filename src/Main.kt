@@ -2,14 +2,21 @@
 
 
 fun main() {
-    greet(age= 18, name = "John")
-    greet(age= 17, name = "Jane")
-    greet(age= 20, name = "Doe")
+    greet("John" )
+    greet("Carol", 15)
+    greet("Alex", 27)
 }
-fun greet(name: String, age: Int){
+fun greet(name: String, age: Int = -1){
+
     if (age >= 18){
         println("$name You are an adult")
     } else {
         println("$name You are a minor")
     }
+
+    if (age == -1){
+        println("Please provide your age")
+        return
+    }
+
 }
