@@ -1,10 +1,15 @@
 
-// creating and invoking function
+
 
 fun main() {
-    greet()
+    greet("Kotlin", 16)
+    greet("Johnny", 29)
+    greet("Francesco", 34)
 }
-// by default functions are public and final, and even unit return type is optional
-fun greet(){
-    println("Hello, World!")
+fun greet(name: String, age: Int){
+    if (age >= 18){
+        println("$name You are an adult")
+    } else {
+        println("$name You are a minor")
+    }
 }
