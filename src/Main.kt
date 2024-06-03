@@ -2,9 +2,9 @@
 
 
 fun main() {
-    greet("Kotlin", 16)
-    greet("Johnny", 29)
-    greet("Francesco", 34)
+    greet(age= 18, name = "John")
+    greet(age= 17, name = "Jane")
+    greet(age= 20, name = "Doe")
 }
 fun greet(name: String, age: Int){
     if (age >= 18){
