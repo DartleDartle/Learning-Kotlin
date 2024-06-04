@@ -1,20 +1,30 @@
-
-
-
 fun main() {
-    foo(bar = {
-        println("Bar as a function 2")
-    })
-    foo{
-        println("Hello")
+    greet("John" )
+    greet("Carol", 15)
+    greet("Alex", 27)
+
+    print(double(5))
+}
+
+fun double(x: Int) : Int {
+    return x * 2
+}
+
+fun greet(name: String, age: Int = -1){
+
+    println("Hello $name")
+
+    if (age == -1){
+
+        println("$name please provide your age\n")
+        return
     }
-    foo()
+
+    if (age >= 18){
+        println("$name $age - You are an adult\n")
+    } else {
+        println("$name You are a minor\n")
+    }
 }
 
-fun foo(name: String = "",
-        bar: () -> Unit = {}
-        ){
 
-    println("Bar Function ")
-    bar()
-}
