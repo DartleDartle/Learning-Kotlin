@@ -6,9 +6,13 @@ fun main() {
     print(double(5))
 }
 
-fun double(x: Int) : Int {
+// You cannot declare the type only if is a single expression
+
+fun double(n: Int) = n * 2
+
+/* fun double(x: Int) : Int {
     return x * 2
-}
+} */
 
 fun greet(name: String, age: Int = -1){
 
