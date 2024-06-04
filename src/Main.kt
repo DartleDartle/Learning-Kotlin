@@ -1,11 +1,17 @@
 fun main() {
     // in Java you need to use "New" keyword to create an object, here you don't need to use "New" keyword.
     // Objects
-    val tv = SmartDevice(
+    val tv1 = SmartDevice(
         "Samsung Smart TV 55' QLED 4K",
         999.99
     )
-    println(tv)
+
+    val tv2 = SmartDevice(
+        "Samsung Smart TV 55' QLED 4K",
+        999.99
+    )
+    println("== ${tv1 == tv2}")
+    println("=== (memory location) ${tv1 === tv2}") // false
 }
 
 // Blueprint
@@ -45,5 +51,26 @@ class SmartDevice(
     override fun toString(): String {
         return "SmartDevice(brand=$brand, price=$price, isSwitchedOn=$isSwitchedOn)"
     }
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (javaClass != other?.javaClass) return false
+
+        other as SmartDevice
+
+        if (brand != other.brand) return false
+        if (price != other.price) return false
+        if (isSwitchedOn != other.isSwitchedOn) return false
+
+        return true
+    }
+
+    override fun hashCode(): Int {
+        var result = brand?.hashCode() ?: 0
+        result = 31 * result + (price?.hashCode() ?: 0)
+        result = 31 * result + isSwitchedOn.hashCode()
+        return result
+    }
+
 
 }
