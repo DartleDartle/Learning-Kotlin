@@ -5,26 +5,7 @@ fun main() {
         "Samsung Smart TV 55' QLED 4K",
         999.99
     )
-    println("${tv.brand} costs ${tv.price}$")
-    tv.turnOn()
-    tv.getDeviceState()
-
-
-    val phone = SmartDevice(
-        "Samsung Galaxy S21 Ultra",
-        1199.99
-    )
-    println("${phone.brand} costs ${phone.price}$")
-    phone.turnOff()
-    phone.getDeviceState()
-
-    val laptop = SmartDevice(
-        "MacBook Pro 16",
-        2399.99
-    )
-    println("${laptop.brand} costs ${laptop.price}$")
-    laptop.turnOn()
-    laptop.getDeviceState()
+    println(tv)
 }
 
 // Blueprint
@@ -59,6 +40,10 @@ class SmartDevice(
     fun turnOff() {
         isSwitchedOn = false
         println("$brand is turning off")
+    }
+
+    override fun toString(): String {
+        return "SmartDevice(brand=$brand, price=$price, isSwitchedOn=$isSwitchedOn)"
     }
 
 }
